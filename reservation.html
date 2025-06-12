@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation d'hôtel - Bobo-Dioulasso</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Réservez votre séjour à Bobo-Dioulasso</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="patrimoine.html">Patrimoine</a></li>
+                <li><a href="reservation.html" class="active">Réservation d'hôtel</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservation">
+        <h2>Formulaire de réservation</h2>
+        <form id="reservationForm">
+            <label for="nom">Nom complet :</label>
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="+226 70 00 00 00" required>
+
+            <label for="arrivee">Date d'arrivée :</label>
+            <input type="date" id="arrivee" name="arrivee" required>
+
+            <label for="depart">Date de départ :</label>
+            <input type="date" id="depart" name="depart" required>
+
+            <label for="nuits">Nombre de nuits :</label>
+            <input type="number" id="nuits" name="nuits" min="1" required>
+
+            <label for="hotel">Sélectionnez un hôtel :</label>
+            <select id="hotel" name="hotel">
+                <option value="villa_bobo">Villa Bobo</option>
+                <option value="hotel_sissiman">Hôtel Sissiman</option>
+                <option value="villa_rose">Villa Rose</option>
+                <option value="hotel_dioulassoba">Hôtel Dioulassoba</option>
+                <option value="hotel_sya">Hôtel Sya</option>
+                <option value="auberge">L'Auberge</option>
+                <option value="iba_hotel">IBA Hotel</option>
+                <option value="residence_dabsco">Résidence Hôtelière DAB'SCO</option>
+                <option value="villa_soudan">Villa Soudan</option>
+                <option value="oasis_lawafossi">Oasis Lawafossi</option>
+            </select>
+
+            <label for="chambres">Type de chambre :</label>
+            <select id="chambres" name="chambres">
+                <option value="standard">Standard</option>
+                <option value="luxe">Luxe</option>
+                <option value="suite">Suite</option>
+                <option value="famille">Famille</option>
+            </select>
+
+            <label for="demandes">Demandes spéciales :</label>
+            <textarea id="demandes" name="demandes" rows="3" placeholder="Exemple : lit supplémentaire, allergie alimentaire..."></textarea>
+
+            <label for="paiement">Mode de paiement :</label>
+            <select id="paiement" name="paiement">
+                <option value="carte">Carte bancaire</option>
+                <option value="paypal">PayPal</option>
+                <option value="espece">Paiement à l’arrivée</option>
+            </select>
+
+            <button type="submit">Confirmer la réservation</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tourisme à Bobo-Dioulasso - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
